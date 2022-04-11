@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="Description" CONTENT="Dimitar 'Whimfoome' Dimitrov's Porfolio, including games, apps, projects and contact info.">
     <title>Whimfoome (Dimitar Dimitrov)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
@@ -19,61 +20,82 @@
                 <a href="https://github.com/Whimfoome" target="_blank" style="padding-right: 5px;"><img src="imgs/logo-github.png" alt="GitHub"></a>
                 <a href="https://twitter.com/Whimfoome1" target="_blank" style="padding-right: 5px;"><img src="imgs/logo-twitter.png" alt="Twitter"></a>
                 <a href="https://www.youtube.com/channel/UC-st0HrCRVScIW75sCGpH_Q" target="_blank" style="padding-right: 5px;"><img src="imgs/logo-youtube.png" alt="YouTube"></a>
+                <a href="https://www.linkedin.com/in/dimitar-dimitrov-9a7730235" target="_blank" style="padding-right: 5px;"><img src="imgs/logo-linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
         <div class="work">
             <h2>## Games</h2>
-            <h2>## Projects</h2>
-            <h3>### Game-Related</h3>
-
-            <div class="overlay-top">
-                <div class="overlay">
-                    <img class="proj-img" src="imgs/project-fps.png">
-                    <div class="top-left"><p class="proj-title">First Person Starter</p></div>
-                    <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/godot-FirstPersonStarter" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/godot-FirstPersonStarter on GitHub">Star</a></div>
+                <div class="overlay-top">
+                    <div class="overlay">
+                        <div class="fadecycle" style="margin-bottom: 55%;">
+                            <img class="proj-img" src="imgs/project-wom-combat.png" />
+                            <img class="proj-img" src="imgs/project-wom-movec.png" />
+                            <img class="proj-img" src="imgs/project-wom-map.png" />
+                            <img class="proj-img" src="imgs/project-invsys.png" />
+                            <img class="proj-img" src="imgs/project-wom-quest.png" />
+                        </div>
+                        <div class="top-left"><p class="proj-title">World of Monkeys (WIP)</p></div>
+                    </div>
+                    <p class="overlay-text">
+                        World of Monkeys is a mobile game being made in Godot engine using C# as primary language. For 3D creation (characters, models, maps) Blender is used, for 2D GIMP and Krita. <span id="more"><br><br>
+                        It's a 3D Side-scrolling RPG game about Monkeys focused on platforming and exploring while encountering enemies and allies. <br><br>
+                        Some of the systems include:<br>
+- Custom Character Controller - a kinematic player controller for platforming, smooth movement (acceleration and deceleration), smooth camera follow, handles slopes, variable jump, coyote timer, jump buffer and more<br>
+- Dynamic Inventory System<br>
+- Quest System<br>
+- UI controls for comfortable mobile experience<br>
+- Combat and AI<br>
+- Save/Load, Checkpoints, Level Loader
+                        </span>
+                        <br><br>
+                        <button onclick="wom_collapse()" id="womBtn"><b>Read More</b></button>
+                    </p>
                 </div>
-                <p class="overlay-text">
-                    Engine: Godot, <br>
-                    Language: GDScript
-                    
-                    <br><br>
-                    <a href="https://github.com/Whimfoome/godot-FirstPersonStarter" target="_blank">Read More</a>
-                </p>
-            </div>
 
-            <div class="overlay-top">
-                <div class="overlay">
-                    <img class="proj-img" src="imgs/project-invsys.png">
-                    <div class="top-left"><p class="proj-title">Dynamic Inventory System</p></div>
-                    <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/godot-InventorySystem" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/godot-InventorySystem on GitHub">Star</a></div>
+                <div class="overlay-top">
+                    <div class="overlay">
+                        <img class="proj-img" src="imgs/project-fps.png">
+                        <div class="top-left"><p class="proj-title">First Person Starter</p></div>
+                        <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/godot-FirstPersonStarter" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/godot-FirstPersonStarter on GitHub">Star</a></div>
+                    </div>
+                    <p class="overlay-text">
+                        Engine: Godot, <br>
+                        Language: GDScript
+                        
+                        <br><br>
+                        <a href="https://github.com/Whimfoome/godot-FirstPersonStarter" target="_blank">Read More</a>
+                    </p>
                 </div>
-                <p class="overlay-text">
-                    Engine: Godot, <br>
-                    Language: GDScript, (C# - not public)
-                    
-                    <br><br>
-                    <a href="https://github.com/Whimfoome/godot-InventorySystem" target="_blank">Read More</a>
-                </p>
-            </div>
 
-            <h3>### Apps</h3>
-
-            <div class="overlay-top">
-                <div class="overlay">
-                    <img class="proj-img" src="imgs/project-gnomeswitch.png">
-                    <div class="top-left"><p class="proj-title">GNOME Switcher</p></div>
-                    <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/better_dexp" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/better_dexp on GitHub">Star</a></div>
+                <div class="overlay-top">
+                    <div class="overlay">
+                        <img class="proj-img" src="imgs/project-invsys.png">
+                        <div class="top-left"><p class="proj-title">Dynamic Inventory System</p></div>
+                        <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/godot-InventorySystem" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/godot-InventorySystem on GitHub">Star</a></div>
+                    </div>
+                    <p class="overlay-text">
+                        Engine: Godot, <br>
+                        Language: GDScript, (C# - not public)
+                        
+                        <br><br>
+                        <a href="https://github.com/Whimfoome/godot-InventorySystem" target="_blank">Read More</a>
+                    </p>
                 </div>
-                <p class="overlay-text">
-                    Platform: Linux with GNOME, <br>
-                    Language: Rust
-                    
-                    <br><br>
-                    <a href="https://github.com/Whimfoome/better_dexp" target="_blank">Read More</a>
-                </p>
-            </div>
-
-            <h3>### Other</h3>
+            <h2>## Linux</h2>
+                <div class="overlay-top">
+                    <div class="overlay">
+                        <img class="proj-img" src="imgs/project-gnomeswitch.png">
+                        <div class="top-left"><p class="proj-title">GNOME Switcher</p></div>
+                        <div class="top-right"><a class="github-button" href="https://github.com/Whimfoome/better_dexp" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Whimfoome/better_dexp on GitHub">Star</a></div>
+                    </div>
+                    <p class="overlay-text">
+                        Platform: Linux with GNOME, <br>
+                        Language: Rust
+                        
+                        <br><br>
+                        <a href="https://github.com/Whimfoome/better_dexp" target="_blank">Read More</a>
+                    </p>
+                </div>
         </div>
     </div>
 
