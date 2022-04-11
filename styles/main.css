@@ -154,6 +154,12 @@ a:active {
     width: 100%;
 }
 
+.proj-cycle {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 /* Top right text */
 .top-right {
     position: absolute;
@@ -179,3 +185,82 @@ a:active {
         float: none;
     }
 }
+
+/* https://codepen.io/andreasfurster/pen/QWKWNGe */
+
+.fadecycle > * {
+    position: absolute;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  .fadecycle > *:nth-child(1) {
+    background: lightsalmon;
+  }
+  
+  .fadecycle > *:nth-child(2) {
+    background: lightsteelblue;
+  }
+  
+  .fadecycle > *:nth-child(3) {
+    background: lightseagreen;
+  }
+  
+  .fadecycle > *:nth-child(4) {
+    background: lightskyblue;
+  }
+  
+  .fadecycle > *:nth-child(5) {
+    background: red;
+  }
+  
+  .fadecycle > *:nth-child(1) {
+    -webkit-animation: fadeinout 15s linear -0.6s infinite;
+            animation: fadeinout 15s linear -0.6s infinite;
+  }
+  
+  .fadecycle > *:nth-child(2) {
+    -webkit-animation: fadeinout 15s linear 2.4s infinite;
+            animation: fadeinout 15s linear 2.4s infinite;
+  }
+  
+  .fadecycle > *:nth-child(3) {
+    -webkit-animation: fadeinout 15s linear 5.4s infinite;
+            animation: fadeinout 15s linear 5.4s infinite;
+  }
+  
+  .fadecycle > *:nth-child(4) {
+    -webkit-animation: fadeinout 15s linear 8.4s infinite;
+            animation: fadeinout 15s linear 8.4s infinite;
+  }
+  
+  .fadecycle > *:nth-child(5) {
+    -webkit-animation: fadeinout 15s linear 11.4s infinite;
+            animation: fadeinout 15s linear 11.4s infinite;
+  }
+  
+  @-webkit-keyframes fadeinout {
+    0% {
+      opacity: 0;
+    }
+    4%, 20% {
+      opacity: 1;
+    }
+    24%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeinout {
+    0% {
+      opacity: 0;
+    }
+    4%, 20% {
+      opacity: 1;
+    }
+    24%, 100% {
+      opacity: 0;
+    }
+  }
