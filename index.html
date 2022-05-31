@@ -7,7 +7,6 @@
     <title>Whimfoome (Dimitar Dimitrov)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-    <script src='scripts/main.js'></script>
 </head>
 <body>
     <div class="container">
@@ -37,7 +36,7 @@
                         <div class="top-left"><p class="proj-title">World of Monkeys (WIP)</p></div>
                     </div>
                     <p class="overlay-text">
-                        World of Monkeys is a mobile game being made in Godot engine using C# as primary language. For 3D creation (characters, models, maps) Blender is used, for 2D GIMP and Krita. <span id="more"><br><br>
+                        World of Monkeys is a mobile game being made in Godot engine using C# as primary language. For 3D creation (characters, models, maps), Blender is being used, for 2D - GIMP and Krita. <span id="more-wom"><br><br>
                         It's a 3D Side-scrolling RPG game about Monkeys focused on platforming and exploring while encountering enemies and allies. <br><br>
                         Some of the systems include:<br>
 - Custom Character Controller - a kinematic player controller for platforming, smooth movement (acceleration and deceleration), smooth camera follow, handles slopes, variable jump, coyote timer, jump buffer and more<br>
@@ -81,7 +80,27 @@
                         <a href="https://github.com/Whimfoome/godot-InventorySystem" target="_blank">Read More</a>
                     </p>
                 </div>
-            <h2>## Linux</h2>
+            <h2>## Apps</h2>
+                <div class="overlay-top">
+                    <div class="overlay">
+                        <div class="fadecycle-vert" style="margin-bottom: 100%;">
+                            <img class="proj-img-vert" src="imgs/fmanime-screenshot1.png" />
+                            <img class="proj-img-vert" src="imgs/fmanime-screenshot2.png" />
+                        </div>
+                        <div class="top-left"><p class="proj-title">Fmanime (WIP)</p></div>
+                    </div>
+                    <p class="overlay-text">
+                        Fmanime is a cross-platform Japanese animation (Anime) and comics (Manga) player/reader. <br><br>
+                        Built with Flutter framework, Dart language.<span id="more-fmanime"> <br><br>
+                            It scrapes data from popular anime and manga websites. <br>
+                            You can add them to your library and track/sync changes with MyAnimeList.
+                        </span>
+                        <br><br>
+                        <button onclick="fmanime_collapse()" id="fmanimeBtn"><b>Read More</b></button>
+                    </p>
+                </div>
+
+                
                 <div class="overlay-top">
                     <div class="overlay">
                         <img class="proj-img" src="imgs/project-gnomeswitch.png">
@@ -99,6 +118,7 @@
         </div>
     </div>
 
+    <script src='scripts/main.js'></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
