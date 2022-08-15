@@ -35,7 +35,8 @@
 
 <style>
 	.profile {
-		margin: 3rem;
+		margin: 5rem;
+		overflow-wrap: break-word;
 	}
 
 	.avatar {
