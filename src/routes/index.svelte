@@ -1,5 +1,4 @@
 <script>
-	import '$lib/global.css';
 	import Profile from '$lib/components/profile.svelte';
 	import Project from '$lib/components/project.svelte';
 
