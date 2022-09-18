@@ -4,6 +4,7 @@
 	import logo_twitter from '$lib/assets/logo-twitter.png';
 	import logo_youtube from '$lib/assets/logo-youtube.png';
 	import logo_linkedin from '$lib/assets/logo-linkedin.png';
+	import logo_itchio from '$lib/assets/logo-itchio.svg';
 </script>
 
 <div class="profile">
@@ -30,12 +31,15 @@
 		<a href="https://www.linkedin.com/in/dimitar-dimitrov-9a7730235" target="_blank">
 			<img src={logo_linkedin} alt="LinkedIn" />
 		</a>
+		<a href="https://whimfoome.itch.io/" target="_blank">
+			<img src={logo_itchio} alt="Itch IO" width="32px" height="32px" />
+		</a>
 	</div>
 </div>
 
 <style>
 	.profile {
-		margin: 5rem;
+		margin: 1rem;
 		overflow-wrap: break-word;
 	}
 
@@ -43,25 +47,60 @@
 		width: 16.25rem;
 		height: 16.25rem;
 		border-radius: 50%;
+		display: grid;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.name {
 		color: white;
 		margin-top: 1.25rem;
 		margin-bottom: 0rem;
+		text-align: center;
 	}
 
 	.username {
 		margin: 0rem;
 		font-weight: 300;
+		text-align: center;
 	}
 
 	.description {
 		color: white;
 		padding-bottom: 0.65em;
+		text-align: center;
 	}
 
-	a {
-		padding-right: 0.5em;
+	.social {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	/* For desktop: */
+	@media screen and (min-width: 1100px) {
+		.profile {
+			margin: 5rem;
+		}
+
+		.avatar {
+			display: inline;
+		}
+
+		.name {
+			text-align: left;
+		}
+
+		.username {
+			text-align: left;
+		}
+
+		.description {
+			text-align: left;
+		}
+
+		.social {
+			justify-content: left;
+		}
 	}
 </style>

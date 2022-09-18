@@ -70,7 +70,7 @@
 
 	.grid-container {
 		display: grid;
-		grid-template-columns: 2fr 5fr;
+		grid-template-columns: 1fr;
 		margin-bottom: 5rem;
 	}
 
@@ -79,7 +79,20 @@
 	}
 
 	.projects {
-		margin-top: 5rem;
+		margin-top: 0rem;
+		margin-left: 5rem;
 		margin-right: 5rem;
+	}
+
+	/* For desktop: */
+	@media screen and (min-width: 1100px) {
+		.grid-container {
+			grid-template-columns: 2fr 5fr;
+		}
+
+		.projects {
+			margin-top: 5rem;
+			margin-left: 0rem;
+		}
 	}
 </style>

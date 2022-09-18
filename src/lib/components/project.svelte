@@ -58,7 +58,7 @@
 <style>
 	.project {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		margin-top: 0.5rem;
 	}
 
@@ -136,5 +136,12 @@
 		color: white;
 		text-decoration: none;
 		cursor: pointer;
+	}
+
+	/* For desktop: */
+	@media screen and (min-width: 1100px) {
+		.project {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 </style>
