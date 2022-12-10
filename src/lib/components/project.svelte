@@ -1,11 +1,15 @@
 <script lang="ts">
 	export let name: string;
-	export let image: string;
+	export let media: string;
 	export let link: string;
 	export let vertical: boolean = false;
+	export let github: string = '';
+	export let isVideo: boolean = false;
 
 	let imgStyle = vertical ? 'width: 50%; justify-self: center;' : 'width: 100%';
+
 	let linkProvided = link.length !== 0;
+	let githubProvided = github.length !== 0;
 
 	let buttonText = 'Read More';
 	let opened = false;
@@ -18,9 +22,15 @@
 
 <div class="project">
 	<div class="overlay">
-		<img alt="{name} Image" src={image} style={imgStyle} />
+		{#if !isVideo}
+			<img class="media" alt="{name} Image" src={media} style={imgStyle} />
+		{:else}
+			<video class="media" loop muted autoplay playsinline style={imgStyle}>
+				<source src={media} type="video/webm" />
+			</video>
+		{/if}
 		<p class="title">{name}</p>
-		{#if linkProvided}
+		{#if githubProvided}
 			<div class="star">
 				<a
 					class="github-button"
@@ -31,6 +41,7 @@
 					data-show-count="true"
 					aria-label="Star {name} on GitHub"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Star
 				</a>
@@ -48,7 +59,7 @@
 
 		<br /><br />
 		{#if linkProvided}
-			<a href={link} target="_blank">{buttonText}</a>
+			<a href={link} target="_blank" rel="noreferrer">{buttonText}</a>
 		{:else}
 			<button on:click|preventDefault={clickedButton}><b>{buttonText}</b></button>
 		{/if}
@@ -69,7 +80,7 @@
 		grid-template-rows: 1fr;
 	}
 
-	img {
+	.media {
 		grid-column: 1/3;
 		grid-row: 1;
 		border: 1px solid #fff;

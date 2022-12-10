@@ -1,9 +1,9 @@
 <script>
-	import avatar from '$lib/assets/avatar.png';
-	import logo_github from '$lib/assets/logo-github.png';
-	import logo_twitter from '$lib/assets/logo-twitter.png';
-	import logo_youtube from '$lib/assets/logo-youtube.png';
-	import logo_linkedin from '$lib/assets/logo-linkedin.png';
+	import avatar from '$lib/assets/avatar.webp';
+	import logo_github from '$lib/assets/logo-github.webp';
+	import logo_twitter from '$lib/assets/logo-twitter.webp';
+	import logo_youtube from '$lib/assets/logo-youtube.webp';
+	import logo_linkedin from '$lib/assets/logo-linkedin.webp';
 	import logo_itchio from '$lib/assets/logo-itchio.svg';
 </script>
 
@@ -12,26 +12,30 @@
 	<h2 class="name">Dimitar Dimitrov</h2>
 	<h3 class="username">Whimfoome</h3>
 	<p class="description">
-		I like making games
-		<br /><br />
-		Experienced with Unreal Engine, Godot and a bit of Unity
-		<br /><br />
-		Love contributing to open-source projects
+		I make things work. Passionate about Flutter, Svelte, Godot, Rust, Linux.
 	</p>
 	<div class="social">
-		<a href="https://github.com/Whimfoome" target="_blank">
+		<a href="https://github.com/Whimfoome" target="_blank" rel="noreferrer">
 			<img src={logo_github} alt="GitHub" />
 		</a>
-		<a href="https://twitter.com/Whimfoome1" target="_blank">
+		<a href="https://twitter.com/Whimfoome1" target="_blank" rel="noreferrer">
 			<img src={logo_twitter} alt="Twitter" />
 		</a>
-		<a href="https://www.youtube.com/channel/UC-st0HrCRVScIW75sCGpH_Q" target="_blank">
+		<a
+			href="https://www.youtube.com/channel/UC-st0HrCRVScIW75sCGpH_Q"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<img src={logo_youtube} alt="YouTube" />
 		</a>
-		<a href="https://www.linkedin.com/in/dimitar-dimitrov-9a7730235" target="_blank">
+		<a
+			href="https://www.linkedin.com/in/dimitar-dimitrov-9a7730235"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<img src={logo_linkedin} alt="LinkedIn" />
 		</a>
-		<a href="https://whimfoome.itch.io/" target="_blank">
+		<a href="https://whimfoome.itch.io/" target="_blank" rel="noreferrer">
 			<img src={logo_itchio} alt="Itch IO" width="32px" height="32px" />
 		</a>
 	</div>

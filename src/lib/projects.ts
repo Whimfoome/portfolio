@@ -1,43 +1,58 @@
-import imWom from '$lib/assets/project-wom.gif';
-import imFps from '$lib/assets/project-fps.png';
-import imInvSys from '$lib/assets/project-invsys.png';
-import imFmanime from '$lib/assets/project-fmanime.gif';
-import imGnomeSwitcher from '$lib/assets/project-gnomeswitch.png';
+import imWom from '$lib/assets/project-wom.webm';
+import imFps from '$lib/assets/project-fps.webp';
+import imInvSys from '$lib/assets/project-invsys.webp';
+import imFmanime from '$lib/assets/project-fmanime.webm';
+import imSimpleFileConverter from '$lib/assets/project-simplefileconverter.webp';
+import imGnomeSwitcher from '$lib/assets/project-gnomeswitch.webp';
 
 export const prWom: IProject = {
 	name: 'World of Monkeys (WIP)',
-	image: imWom,
-	link: ''
+	media: imWom,
+	link: '',
+	isVideo: true
 };
 
 export const prFps: IProject = {
 	name: 'First Person Starter',
-	image: imFps,
-	link: 'https://github.com/Whimfoome/godot-FirstPersonStarter'
+	media: imFps,
+	link: 'https://github.com/Whimfoome/godot-FirstPersonStarter',
+	github: 'https://github.com/Whimfoome/godot-FirstPersonStarter'
 };
 
 export const prInvSys: IProject = {
 	name: 'Dynamic Inventory System',
-	image: imInvSys,
-	link: 'https://github.com/Whimfoome/godot-InventorySystem'
+	media: imInvSys,
+	link: 'https://github.com/Whimfoome/godot-InventorySystem',
+	github: 'https://github.com/Whimfoome/godot-InventorySystem'
 };
 
 export const prFmanime: IProject = {
 	name: 'Fmanime',
-	image: imFmanime,
+	media: imFmanime,
 	link: 'https://github.com/Whimfoome/fmanime',
-	vertical: true
+	github: 'https://github.com/Whimfoome/fmanime',
+	vertical: true,
+	isVideo: true
+};
+
+export const prSimpleFileConverter: IProject = {
+	name: 'simple-file-converter',
+	media: imSimpleFileConverter,
+	link: 'https://whimfoome.gumroad.com/l/simple-file-converter'
 };
 
 export const prGnomeSwitcher: IProject = {
 	name: 'GNOME Switcher',
-	image: imGnomeSwitcher,
-	link: 'https://github.com/Whimfoome/better_dexp'
+	media: imGnomeSwitcher,
+	link: 'https://github.com/Whimfoome/better_dexp',
+	github: 'https://github.com/Whimfoome/better_dexp'
 };
 
 interface IProject {
 	name: string;
-	image: string;
+	media: string;
 	link: string;
 	vertical?: boolean;
+	github?: string;
+	isVideo?: boolean;
 }
