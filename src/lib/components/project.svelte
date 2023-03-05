@@ -23,7 +23,7 @@
 <div class="project">
 	<div class="overlay">
 		{#if !isVideo}
-			<img class="media" alt="{name} Image" src={media} style={imgStyle} />
+			<img class="media" alt="{name} Image" loading="lazy" src={media} style={imgStyle} />
 		{:else}
 			<video class="media" loop muted autoplay playsinline style={imgStyle}>
 				<source src={media} type="video/webm" />

@@ -1,12 +1,13 @@
 import imWom from '$lib/assets/project-wom.webm';
 import imFps from '$lib/assets/project-fps.webp';
 import imInvSys from '$lib/assets/project-invsys.webp';
+import imSwiftMarket from '$lib/assets/project-swiftmarket.webm';
 import imFmanime from '$lib/assets/project-fmanime.webm';
 import imSimpleFileConverter from '$lib/assets/project-simplefileconverter.webp';
 import imGnomeSwitcher from '$lib/assets/project-gnomeswitch.webp';
 
 export const prWom: IProject = {
-	name: 'World of Monkeys (WIP)',
+	name: 'World of Monkeys',
 	media: imWom,
 	link: '',
 	isVideo: true
@@ -24,6 +25,13 @@ export const prInvSys: IProject = {
 	media: imInvSys,
 	link: 'https://github.com/Whimfoome/godot-InventorySystem',
 	github: 'https://github.com/Whimfoome/godot-InventorySystem'
+};
+
+export const prSwiftMarket: IProject = {
+	name: 'SwiftMarket',
+	media: imSwiftMarket,
+	link: 'https://github.com/SwiftMarket',
+	isVideo: true
 };
 
 export const prFmanime: IProject = {
