@@ -77,8 +77,8 @@
 			better performance and faster development time.
 			<br /><br />
 			Used technologies include: <br />
-			- Frontend: SvelteKit, TailwindCSS <br />
-			- Backend: Strapi (headless CMS) <br />
+			- SvelteKit, TailwindCSS <br />
+			- Database: Pocketbase <br />
 			- Payments: Stripe
 		</Project>
 		<Project {...prFmanime}>

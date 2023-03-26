@@ -21,18 +21,10 @@
 		<a href="https://twitter.com/Whimfoome1" target="_blank" rel="noreferrer">
 			<img src={logo_twitter} alt="Twitter" />
 		</a>
-		<a
-			href="https://www.youtube.com/channel/UC-st0HrCRVScIW75sCGpH_Q"
-			target="_blank"
-			rel="noreferrer"
-		>
+		<a href="https://www.youtube.com/@Whimfoome" target="_blank" rel="noreferrer">
 			<img src={logo_youtube} alt="YouTube" />
 		</a>
-		<a
-			href="https://www.linkedin.com/in/dimitar-dimitrov-9a7730235"
-			target="_blank"
-			rel="noreferrer"
-		>
+		<a href="https://www.linkedin.com/in/dimitar-dimitrov1/" target="_blank" rel="noreferrer">
 			<img src={logo_linkedin} alt="LinkedIn" />
 		</a>
 		<a href="https://whimfoome.itch.io/" target="_blank" rel="noreferrer">

@@ -31,7 +31,8 @@ export const prSwiftMarket: IProject = {
 	name: 'SwiftMarket',
 	media: imSwiftMarket,
 	link: 'https://github.com/SwiftMarket',
-	isVideo: true
+	isVideo: true,
+	github: 'https://github.com/SwiftMarket/swiftmarket-sveltekit'
 };
 
 export const prFmanime: IProject = {
