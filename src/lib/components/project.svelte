@@ -34,7 +34,7 @@
 			<div class="star">
 				<a
 					class="github-button"
-					href={link}
+					href={github}
 					data-color-scheme="no-preference: light; light: light; dark: light;"
 					data-icon="octicon-star"
 					data-size="large"
