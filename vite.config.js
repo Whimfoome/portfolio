@@ -1,11 +1,18 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
+import { defineConfig } from 'vitest/config';
+import Icons from 'unplugin-icons/vite';
 
-/** @type {import('vite').UserConfig} */
-const config = {
-	plugins: [sveltekit()],
+export default defineConfig({
+	plugins: [
+		enhancedImages(),
+		sveltekit(),
+		Icons({
+			compiler: 'svelte',
+			autoInstall: true,
+		})
+	],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
-};
-
-export default config;
+});

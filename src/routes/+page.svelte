@@ -9,7 +9,8 @@
 		prSwiftMarket,
 		prFmanime,
 		prSimpleFileConverter,
-		prGnomeSwitcher
+		prGnomeSwitcher,
+		prToneShift
 	} from '$lib/projects';
 </script>
 
@@ -72,6 +73,22 @@
 		</Project>
 
 		<h2>## Apps</h2>
+		<Project {...prToneShift}>
+			AI-Powered Voice Cloning & Music Platform
+			<br /><br />
+			Voice Cloning: Generate high-fidelity replicas of any voice with a short dataset. <br />
+			Music Separation: Isolate vocals and instrumentals from songs for remixing and creative projects.
+			<br /><br />
+			The platform was used by Creators to Generate Viral Videos over different social networks.
+			<br /><br />
+			Containarized RVC, so it can be scaled horizontally based on the GPU load of the instances.
+			<br /><br />
+			Used technologies include: <br />
+			- SvelteKit, TailwindCSS, Docker <br />
+			- AI: Python, PyTorch, RVC <br />
+			- Backend: Firebase Auth/Storage/Functions, Firestore Database <br />
+			- Payments: Stripe
+		</Project>
 		<Project {...prSwiftMarket}>
 			Custom E-commerce solution with a headless CMS integration and Stripe payments, providing
 			better performance and faster development time.

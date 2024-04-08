@@ -1,6 +1,7 @@
 import imWom from '$lib/assets/project-wom.webm';
 import imFps from '$lib/assets/project-fps.webp';
 import imInvSys from '$lib/assets/project-invsys.webp';
+import imToneShift from '$lib/assets/project-toneshift.webp';
 import imSwiftMarket from '$lib/assets/project-swiftmarket.webm';
 import imFmanime from '$lib/assets/project-fmanime.webm';
 import imSimpleFileConverter from '$lib/assets/project-simplefileconverter.webp';
@@ -25,6 +26,12 @@ export const prInvSys: IProject = {
 	media: imInvSys,
 	link: 'https://github.com/Whimfoome/godot-InventorySystem',
 	github: 'https://github.com/Whimfoome/godot-InventorySystem'
+};
+
+export const prToneShift: IProject = {
+	name: 'ToneShift',
+	media: imToneShift,
+	link: 'https://www.toneshift.cc/'
 };
 
 export const prSwiftMarket: IProject = {

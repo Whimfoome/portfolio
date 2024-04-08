@@ -1,34 +1,32 @@
 <script>
-	import avatar from '$lib/assets/avatar.webp';
-	import logo_github from '$lib/assets/logo-github.webp';
-	import logo_twitter from '$lib/assets/logo-twitter.webp';
-	import logo_youtube from '$lib/assets/logo-youtube.webp';
-	import logo_linkedin from '$lib/assets/logo-linkedin.webp';
-	import logo_itchio from '$lib/assets/logo-itchio.svg';
+	import avatar from '$lib/assets/avatar.webp?enhanced';
+	// @ts-ignore
+	import GrommetIconsGithub from '~icons/grommet-icons/github';
+	// @ts-ignore
+	import GrommetIconsLinkedin from '~icons/grommet-icons/linkedin';
+	// @ts-ignore
+	import GrommetIconsMail from '~icons/grommet-icons/mail';
 </script>
 
 <div class="profile">
-	<img class="avatar" alt="Avatar" src={avatar} />
+	<enhanced:img class="avatar" alt="Avatar" src={avatar} />
 	<h2 class="name">Dimitar Dimitrov</h2>
 	<h3 class="username">Whimfoome</h3>
-	<p class="description">
-		I make things work. Passionate about Flutter, Svelte, Godot, Rust, Linux.
-	</p>
+	<p class="description">I make things work. Passionate about Svelte, Godot, Rust, Linux.</p>
 	<div class="social">
-		<a href="https://github.com/Whimfoome" target="_blank" rel="noreferrer">
-			<img src={logo_github} alt="GitHub" />
+		<a href="mailto:whimfoome@protonmail.com" title="Mail">
+			<GrommetIconsMail style="font-size: 2em; color: white" />
 		</a>
-		<a href="https://twitter.com/Whimfoome1" target="_blank" rel="noreferrer">
-			<img src={logo_twitter} alt="Twitter" />
+		<a href="https://github.com/Whimfoome" target="_blank" rel="noreferrer" title="GitHub Social">
+			<GrommetIconsGithub style="font-size: 2em; color: white" />
 		</a>
-		<a href="https://www.youtube.com/@Whimfoome" target="_blank" rel="noreferrer">
-			<img src={logo_youtube} alt="YouTube" />
-		</a>
-		<a href="https://www.linkedin.com/in/dimitar-dimitrov1/" target="_blank" rel="noreferrer">
-			<img src={logo_linkedin} alt="LinkedIn" />
-		</a>
-		<a href="https://whimfoome.itch.io/" target="_blank" rel="noreferrer">
-			<img src={logo_itchio} alt="Itch IO" width="32px" height="32px" />
+		<a
+			href="https://www.linkedin.com/in/dimitar-dimitrov1/"
+			target="_blank"
+			rel="noreferrer"
+			title="LinkedIn Social"
+		>
+			<GrommetIconsLinkedin style="font-size: 2em; color: white" />
 		</a>
 	</div>
 </div>

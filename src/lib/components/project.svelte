@@ -95,7 +95,11 @@
 		color: white;
 		font-weight: bold;
 		font-size: 21px;
-		text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+		text-shadow:
+			-2px -2px 2px #000,
+			2px -2px 2px #000,
+			-2px 2px 2px #000,
+			2px 2px 2px #000;
 	}
 
 	.star {
